@@ -1,0 +1,75 @@
+/*! custom.css v1.0 */
+
+/* ==========================================================================
+
+   Custom CSS Stylesheet. This is where you should add your own styles!
+
+   ========================================================================== */
+
+/*
+* Simple style overrides or custom adds
+*/
+
+.some-css-selector {font-size:13px;}
+
+
+/* ==========================================================================
+   ** Responsive styles custom rules
+   * These rules are ready to be used for either overrides
+   * or just your own custom rules.
+   ========================================================================== */
+
+@media only screen and (min-width : 1921px){
+
+}
+
+@media only screen and (max-width : 1440px){
+
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1440px){
+
+}
+
+@media only screen and (min-width : 1200px){
+
+}
+
+@media only screen and (max-width: 1199px){
+
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media only screen and (min-width: 992px){
+
+
+}
+
+@media only screen and (max-width: 991px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 320px) {
+
+}
+
