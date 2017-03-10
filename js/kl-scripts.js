@@ -3,14 +3,14 @@
 	Kallyas JS scripts.
 	Contains scripts dedicated for this template.
 
-	Do not change nothing as it will be constantly updated and your work might 
+	Do not change nothing as it will be constantly updated and your work might
 	get overwritten.
 
 ========================================================================== */
 
 
 // IMPORTANT! Set your own domain to enable the Google search functionality on your website
-var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
+var SEARCH_DOMAIN = 'echoctf.com/';
 
 
 
@@ -20,7 +20,7 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 (function($, window, document) {
 	"use strict";
 
-	
+
 // FIX mask for Safari Browser
 	if(/^((?!chrome|android).)*safari/i.test(navigator.userAgent)){
 		document.getElementsByTagName('body')[0].className+=' is-safari';
@@ -92,7 +92,7 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 		});
 	})();
 // END Add active class for menu items depending on the page loaded
-	
+
 
 // Chaser menu
 // Enable Chaser menu 1 - Yes / 0 - No
@@ -101,7 +101,7 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 	var KT_Chaser = {
 		// Whether or not the chaser is visible
 		visible: false,
-		
+
 		update: function( $header, headerStyleNumber )
 		{
 			if(headerStyleNumber < 1){
@@ -261,7 +261,7 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 		// BIND OPEN MENU TRIGGER
 		responsive_trigger.click(function(e){
 			e.preventDefault();
-			
+
 			responsive_menu.addClass('zn-menu-visible');
 			set_height();
 
@@ -341,7 +341,7 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 // END Responsive Main-Menu
 
 
-// Scroll to top  
+// Scroll to top
 	if ($('#totop').length) {
 		var scrollTrigger = 100, // px
 		backToTop = function () {
@@ -363,17 +363,19 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 			}, 700);
 		});
 	}
-// END Scroll to top 
+// END Scroll to top
 
 
-// Load Date in the current div 
-	$.ajax({
+// Load Date in the current div
+/*
+ 	$.ajax({
 	  url: "php_helpers/date.php",
 	  success: function(data){
 		$("#current-date").html(data);
 	  }
 	});
-// END Load Date in the current div 
+*/
+// END Load Date in the current div
 
 
 // Kallyas Videos
@@ -443,7 +445,7 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 					e.preventDefault();
 					Video_back.toggle_mute();
 					$(this).children('i').toggleClass('mute');
-				}); 
+				});
 			}
 		});
 	}
@@ -579,12 +581,12 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 	};
 	var blog_isotope = $('.zn_blog_archive_element');
 	if(blog_isotope){
-		enable_blog_isotope ( blog_isotope );   
+		enable_blog_isotope ( blog_isotope );
 	}
-// END Blog Isotope item 
+// END Blog Isotope item
 
 
-// Latest & Bestsellers carousels 
+// Latest & Bestsellers carousels
 	if(typeof($('.shop-latest-carousel > ul')) != 'undefined') {
 		$('.shop-latest-carousel > ul').each(function(index, element) {
 			$(this).carouFredSel({
@@ -593,18 +595,18 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 				auto: false,
 				height: 437,
 				items: {
-					width:260, 
+					width:260,
 					visible: {
-						min: 1, 
-						max: 4 
-					} 
+						min: 1,
+						max: 4
+					}
 				},
 				prev    : { button : $(this).parent().find('a.prev'), key : "left" },
 				next    : { button : $(this).parent().find('a.next'), key : "right" },
 			});
 		});
 	}
-	
+
 	var enable_shop_limited_offers = function( content ){
 		var elements = content.find('.zn_limited_offers');
 		if(elements && (typeof($.fn.carouFredSel) != 'undefined')){
@@ -616,11 +618,11 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 					scroll: 1,
 					/*auto: true,*/
 					items: {
-						width:190, 
-						visible: { 
+						width:190,
+						visible: {
 							min: 2,
-							max: 4 
-						} 
+							max: 4
+						}
 					},
 					prev    : {
 						button  : function(){return self.closest('.limited-offers-carousel').find('.prev');},
@@ -630,15 +632,15 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 						button  : function(){return self.closest('.limited-offers-carousel').find('.next');},
 						key     : "right"
 					}
-				});         
+				});
 			});
 		}
 	};
 	var shop_limited_carousel = $('.limited-offers-carousel');
 	if(shop_limited_carousel){
-		enable_shop_limited_offers ( shop_limited_carousel );   
+		enable_shop_limited_offers ( shop_limited_carousel );
 	}
-// END Latest & Bestsellers carousels 
+// END Latest & Bestsellers carousels
 
 
 // Price Filter
@@ -648,7 +650,7 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 			var _t = $(this),
 				priceResult = _t.parent().find(".price-result"),
 				currency = priceResult.data('currency');
-			   
+
 			_t.slider({
 				range: true,
 				min: 0,
@@ -660,7 +662,7 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 			});
 			priceResult.val( currency + _t.slider( "values", 0 ) + " - " + currency + _t.slider( "values", 1 ) );
 		});
-	}	
+	}
 // END Price Filter
 
 
@@ -690,7 +692,7 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 				return false;
 			});
 		});
-	}	
+	}
 // END Form Validation & Send Mail code
 
 
@@ -743,14 +745,14 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 				}).on('mouseleave', function(){
 					target.removeClass('kl-ib-point-active');
 				});
-			}           
+			}
 		});
 	}
 // END Stage icon boxes element
 
 
-// MailChimp working newsletter 
-// read more http://stackoverflow.com/a/15120409/477958 
+// MailChimp working newsletter
+// read more http://stackoverflow.com/a/15120409/477958
 	function register($form) {
 		if(! $form){
 			return false;
@@ -777,7 +779,7 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 					setTimeout(function(){
 						themessage.addClass('animate');
 					}, 300);
-				} 
+				}
 				else {
 					var message = data.msg,
 					themessage = $('<span class="success alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>'+message+'</span>');
@@ -789,7 +791,7 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 			}
 		});
 	}
-	
+
 	var $form = $('#mc-embedded-subscribe-form');
 	if($form){
 		$('#mc-embedded-subscribe-form').on('click', function(event) {
@@ -805,7 +807,7 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 			register($form_pop);
 		});
 	}
-// END MailChimp working newsletter 
+// END MailChimp working newsletter
 
 
 // Bubble Boxes
@@ -838,8 +840,8 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 				});
 			});
 		});
-	}	
-// END Bubble Boxes   
+	}
+// END Bubble Boxes
 
 
 // Popup Box
@@ -916,16 +918,16 @@ var SEARCH_DOMAIN = 'hogash-demos.com/kallyas_html/';
 
 
 // Tweets in Footer
-/* ### HOW TO CREATE A VALID ID: ### 
-* Go to www.twitter.com and sign in as normal, go to your settings page. 
-* Go to Widgets on the left hand side. 
-* Create a new widget for what you need eg user timeline or search etc.  
-* Feel free to check exclude replies if you dont want replies in results. 
-* Now go back to settings page, and then go back to widgets page, you should 
-* see the widget you just created. Click edit. 
-* Now look at the URL in your web browser, you will see a long number like this: 
-* 345735908357048478 
-* Use this as your ID below instead! 
+/* ### HOW TO CREATE A VALID ID: ###
+* Go to www.twitter.com and sign in as normal, go to your settings page.
+* Go to Widgets on the left hand side.
+* Create a new widget for what you need eg user timeline or search etc.
+* Feel free to check exclude replies if you dont want replies in results.
+* Now go back to settings page, and then go back to widgets page, you should
+* see the widget you just created. Click edit.
+* Now look at the URL in your web browser, you will see a long number like this:
+* 345735908357048478
+* Use this as your ID below instead!
 */
 
 	var twFeed = $('#twitterFeed');
