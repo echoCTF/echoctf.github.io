@@ -753,8 +753,8 @@ body .kl-ioscaption--style4 .more:hover:before { background: rgba(205,33,34,0.9)
 	.chaser .main-menu > li:last-child { border: none;}
 	.chaser .main-menu { margin-top: 30px;}
 	.chaser .logo-container.hasInfoCard:before { top: 30px;}
-	.chaser .logosize--yes .site-logo { height: 92px; width: 100%; text-align: center;}
-	.chaser .site-logo img { max-height: 92px;}
+	.chaser .logosize--yes .site-logo { height: 48px; width: 100%; text-align: center;}
+	.chaser .site-logo img { max-height: 48px;}
 	.chaser .main-menu li a[title="separator"] { text-indent: -2999px; display: none;}
 	.chaser .main-menu,
 	.chaser .col-sm-10,
@@ -936,9 +936,9 @@ body .site-header .kl-cart-button + .pPanel {min-width: 320px}
 
 
 /* Site Header & logo */
-.site-logo { float: left; margin:0; display: table;}
+.site-logo { float: left; margin: 10px; display: table;}
 .site-logo a { padding: 0; display: table-cell; position:relative; vertical-align: middle; }
-.site-logo img { max-height: 92px; }
+.site-logo img { max-height: 48px;}
 
 
 
@@ -964,14 +964,14 @@ body .site-header .kl-cart-button + .pPanel {min-width: 320px}
 .logo-infocard .contact-details { background: url(../images/say_hi.png) no-repeat right top; }
 
 /* Logo size preset */
-.logosize--contain .site-logo .logo-img {width: auto; height:100%;}
+.logosize--contain .site-logo .logo-img {width: auto; height: 100%; padding-top: 10px}
 
 
 /*** Header Height */
 .site-header,
 .logosize--contain .site-logo a { height:100px; }
 .logosize--contain .site-logo .logo-img,
-.logosize--contain .site-logo .logo-img-sticky { max-height:100px; vertical-align: middle;}
+.logosize--contain .site-logo .logo-img-sticky { max-height:100px; vertical-align: middle; padding-top: 10px}
 
 /* Site Content */
 #page_wrapper { position: relative; overflow: hidden;}
