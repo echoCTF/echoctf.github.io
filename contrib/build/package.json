@@ -1,0 +1,30 @@
+{
+  "name": "build",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-minify": "*",
+    "gulp-imagemin": "*",
+    "gulp-clean-css": "*",
+    "gulp-image-resize": "*",
+    "gulp-rename": "*",
+    "gulp-open": "*",
+    "gulp-filter": "*",
+    "imagemin-jpegtran": "*",
+    "imagemin": "*",
+    "gulp-autoprefixer": "*"
+  },
+  "devDependencies": {
+    "imagemin": "^7.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
