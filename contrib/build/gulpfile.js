@@ -18,11 +18,14 @@ var rename = require("gulp-rename");
 var Paths = {
   HERE: './',
   DIST: 'dist/',
-  CSS: '../../css/',
-  IMAGES: '../../images/',
+  CSS_SRC: '../../css/**/*.css',
+  CSS_DST: '../../css/',
+  IMAGES_SRC: '../../images/**/*.*',
+  IMAGES_DST: '../../images/',
   PORTFOLIO_SRC: '../../images/portfolio-images/**/*.*',
   PORTFOLIO_DST: '../../images/portfolio-images/',
-  JS: '../../js/',
+  JS_SRC: '../../js/**/*.js',
+  JS_DST: '../../js/'
 };
 gulp.task('createThumbnails', function() {
   const filterThumb = filter(function (file) {
@@ -35,9 +38,18 @@ gulp.task('createThumbnails', function() {
         .pipe(rename(function (path) { path.basename += "_th"; }))
       .pipe(gulp.dest(Paths.PORTFOLIO_DST));
 });
-
+gulp.task('minifyJS', function() {
+  return gulp.src(Paths.JS_SRC)
+    .pipe(minify())
+    .pipe(gulp.dest(Paths.JS_DST))
+});
+gulp.task('minifyCSS', () => {
+  return gulp.src(Paths.CSS_SRC)
+    .pipe(cleanCSS())
+    .pipe(gulp.dest(Paths.CSS_DST));
+});
 gulp.task('minifyIMG', function() {
-  return gulp.src(['../../images/**/*'])
+  return gulp.src(Paths.IMAGES_SRC)
         .pipe(imagemin([
           imagemin.gifsicle({interlaced: true}),
           imageminJpegtran({progressive: true}),
@@ -49,7 +61,7 @@ gulp.task('minifyIMG', function() {
               ]
           })
       ],{ verbose: true }))
-      .pipe(gulp.dest('../../images'));
+      .pipe(gulp.dest(Paths.IMAGES_DST));
 });
 //
 //gulp.task('minifyJS', function() {
