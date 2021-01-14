@@ -5448,14 +5448,14 @@ button.close {
 }
 
 /* Style inputs */
-/* nput[type=text], select, textarea { */
-/*  width: 100%; */
-/*  padding: 12px; */
-/*  border: 1px solid #ccc; */
-/*  margin-top: 6px; */
-/*  margin-bottom: 16px; */
-/*  resize: vertical; */
-/* } */
+ input[type=text], select, textarea { 
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical;
+ } 
 
 input[type=submit] {
   background-color: #4CAF50;
