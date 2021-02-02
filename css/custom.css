@@ -108,7 +108,7 @@
 /* Create coloured row */
 .cl-row-buffer {
 margin-top:20px;
-margin-bottom:20px;
+/* margin-bottom:20px; */
 }
 
 .cl-row-even {
