@@ -104,3 +104,16 @@
 *    width: 40%;
 * }
 */
+
+/* Create coloured row */
+.cl-row-buffer {
+margin-top:20px;
+margin-bottom:20px;
+}
+
+.cl-row-even {
+background-color:#94C11F;
+}
+.cl-row-odd {
+background-color:#BDE3FB;
+}
