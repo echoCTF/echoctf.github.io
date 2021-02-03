@@ -98,6 +98,8 @@
 .how-img 
 {
     text-align: center;
+    width: 50%; 
+    height: auto;
 }
 
 /*
