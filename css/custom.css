@@ -73,6 +73,8 @@
 
 }
 
+/* Place text next to an image */
+
 .how-section1{
     margin-top:-15%;
     padding: 10%;
@@ -107,15 +109,37 @@
 * }
 */
 
-/* Create coloured row */
-.cl-row-buffer {
-margin-top:20px;
-/* margin-bottom:20px; */
-}
 
-.cl-row-even {
-background-color:#94C11F;
+
+/* Timeline */
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
 }
-.cl-row-odd {
-background-color:#BDE3FB;
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
 }
