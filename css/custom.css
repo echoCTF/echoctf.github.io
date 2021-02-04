@@ -115,7 +115,7 @@
 
 ul.timeline {
     list-style-type: none;
-/*    position: relative; */
+    position: relative; 
 }
 ul.timeline:before {
     content: ' ';
