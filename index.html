@@ -27,6 +27,9 @@
 
 <script type="text/javascript" src="./js/modernizr.min.js"></script>
 <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+
+
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -1713,2377 +1716,728 @@
 		<!--/ Stage & Icon boxes section -->
 
 		<!-- Portfolio category 3 columns section with custom top padding -->
-		<section id="portfolio" class="hg_section ptop-20">
-			<div class="container">
-				<div class="row">
-				<!-- Title element with bottom border -->
-					<div
-						class="kl-title-block clearfix text-center tbk-symbol--border tbk-icon-pos--after-title">
-						<!-- Title -->
-						<h3 class="tbk__title montserrat fs-38 gray fw-bold">PORTFOLIO</h3>
-						<h4 class="tbk__subtitle fs-18 light-gray">Check out some of our most distinctive work</h4>
-						<!--/ Title -->
 
-						<!-- Title bottom symbol -->
-						<div class="tbk__symbol ">
-							<span></span>
-						</div>
-					</div>
-						<!--/ Title bottom symbol -->
-				</div>
+<section id="portfolio" class="hg_section ptop-20">
+  <div class="container">
+    <div class="row">
+      <!-- Title element with bottom border -->
+      <div class="kl-title-block clearfix text-center tbk-symbol--border tbk-icon-pos--after-title">
+        <h3 class="tbk__title montserrat fs-38 gray fw-bold">PORTFOLIO</h3>
+        <h4 class="tbk__subtitle fs-18 light-gray">Check out some of our most distinctive work</h4>
+        <div class="tbk__symbol"><span></span></div>
       </div>
-    </section>
+    </div>
 
-    <!-- Portfolio Digital Pakistan Cybersecurity Hackathon -->
-    <section id="pakistan2021" class="hg_section ptop-20">
-      <div class="container">
-      <div class="row">
-        <div
-	  class="kl-title-block clearfix text-center tbk-symbol--border tbk-icon-pos--after-title">
-          <h4 class="tbk__subtitle fs-18 light-gray">Digital Pakistan Cybersecurity Hackathon 2021</h4>
+    <style>
+      .portfolio-details {
+        display: none;
+        margin-top: 15px;
+        padding: 10px;
+        border-top: 1px solid #ddd;
+        background: #f9f9f9;
+      }
+
+      input[type="radio"] {
+        display: none;
+      }
+
+      input[type="radio"]:checked + label + .portfolio-details {
+        display: block;
+      }
+
+      .portfolio-card label {
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      .portfolio-img {
+        margin-bottom: 15px;
+        overflow: hidden;
+      }
+
+      .portfolio-img a {
+        display: block;
+        transition: transform 0.3s ease;
+        border: 2px solid transparent;
+      }
+
+      .portfolio-img a:hover {
+        transform: scale(1.03);
+        border-color: #28a745;
+      }
+
+      .portfolio-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .text-center.small {
+        font-size: 13px;
+        margin-top: 5px;
+      }
+    </style>
+
+    <div class="row ptop-40">
+    
+	<!-- HackMex 2019 - 2024 -->
+	<div class="col-xs-12 col-sm-4">
+  		<div class="thumbnail portfolio-card">
+    	<img src="images/portfolio-images/HACKMEX2019/HackMex-CTF-area2_th.jpeg" class="img-responsive" alt="HackMex 2019">
+    		<div class="caption">
+      		<h4>HackMex 2019–2024</h4>
+      		<p class="text-muted small">One of our longest-running collaborations — a multi-sector CTF with IPN Mexico that has grown into a national institution.</p>
+
+      <input type="radio" name="portfolio-toggle" id="hackmex">
+      <label for="hackmex" class="btn btn-default btn-sm">Read more</label>
+
+      <div class="portfolio-details">
+        <p><strong>HackMex</strong> is one of Latin America's most recognized cybersecurity competitions, organized annually by the Instituto Politécnico Nacional (IPN) and powered by echoCTF. What started as a one-time engagement in 2019 quickly evolved into a long-term partnership built on trust, innovation, and consistent delivery.</p>
+        <p>Each edition pushes the boundaries of cyber simulation — combining real-world attack scenarios with live visualizations, interactive experiences, and scalable multi-track infrastructure.</p>
+        <ul style="padding-left: 20px; margin-bottom: 10px;">
+          <li><b>2019</b>: First event with IPN; massive media attention and national recognition</li>
+		  <li><b>2020</b>: Introduced dual-track setup for Academic and Government teams with separate dashboards</li>
+		  <li><b>2021</b>: Maintained hybrid format due to pandemic, reinforcing resilience of the platform</li>
+		  <li><b>2022</b>: Scaled to 500 participants across 3 sectors (Academic, Government, Professionals) with qualification and final rounds</li>
+		  <li><b>2023</b>: Debuted a nuclear plant mini-diorama for visualizing ICS/SCADA threats</li>
+		  <li><b>2024</b>: Introduced interactive bomb defusal game for bystanders, boosting public engagement</li>
+        </ul>
+
+        <div class="row">
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/HACKMEX2019/HackMex-CTF-area3.jpeg" target="_blank">
+              <img src="images/portfolio-images/HACKMEX2019/HackMex-CTF-area3_th.jpeg" alt="CTF area">
+            </a>
+            <p class="text-center small">CTF Area</p>
+          </div>
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/HACKMEX2019/HackMex-CTF-area.jpg" target="_blank">
+              <img src="images/portfolio-images/HACKMEX2019/HackMex-CTF-area_th.jpg" alt="2019 competition area">
+            </a>
+            <p class="text-center small">Competition Area</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/HACKMEX2020/hackmex-gource-visuals.png" target="_blank">
+              <img src="images/portfolio-images/HACKMEX2020/hackmex-gource-visuals_th.png" alt="Visuals from attacks">
+            </a>
+            <p class="text-center small">Visuals From Attacks</p>>
+		  </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/HACKMEX2019/echoCTF-visuals.jpeg" target="_blank">
+              <img src="images/portfolio-images/HACKMEX2019/echoCTF-visuals_th.jpeg" alt="Network visuals">
+            </a>
+            <p class="text-center small">Network Visuals</p>
+		  </div>
         </div>
-        <!--/ Title element with bottom border -->
-	An onsite CTF competition was developed and run for Pakistan's 1st Nationwide Digital Cybersecurity Hackathon for professionals and students. 
-	The competition was held by Pakistan's Ministry of IT & Telecom and Ignite. The competition consisted of three preliminary rounds that took place in three of Pakistan’s 
-	major cities (Lahore, Karachi, and Islamabad) and a final round that was executed in Islamabad. 
-	      
-	The teams competed in five categories including network exploitation, operating systems exploitation, speed programming, application & web exploitation and mobile 
-	device exploitation.
-	
-	The scope of the competition was to create a common base for cooperation between member states, information sharing, and discussions on current cybersecurity issues, 
-	as well as to provide hands-on experience to national cybersecurity resources.
 
-        <br> <br>
-        <div class="col-md-12 col-sm-12">
-          <div class="row">
-            <div class="col-sm-3">
-              <!-- Portfolio image #1 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/DIGITAL_PAKISTAN2021/digital_pakistan_leaderboard.png"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="Leaderboards"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/DIGITAL_PAKISTAN2021/digital_pakistan_leaderboard_th.png"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">Leaderboards</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #1 -->
-            </div><!--/ col-sm-4 -->
-
-
-            <div class="col-sm-3">
-              <!-- Portfolio image #2 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/DIGITAL_PAKISTAN2021/digital_pakistan_logstalgia.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="Simultaneous attacks in finals"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/DIGITAL_PAKISTAN2021/digital_pakistan_logstalgia_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">Simultaneous attacks in finals</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #2 -->
-            </div><!--/ col-sm-4 -->
-		  
-            <div class="col-sm-3">
-              <!-- Portfolio image #3 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/DIGITAL_PAKISTAN2021/digital_pakistan_finals.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="Finals in Islamabad"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/DIGITAL_PAKISTAN2021/digital_pakistan_finals_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">Finals in Islamabad</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #3 -->
-            </div><!--/ col-sm-4 -->
-		  
-
-            </div><!--/ col-sm-4 -->
-
-          </div><!--/ row -->
-        </div><!--/ col-md-12 col-sm-12 -->
-      </div>
-      <!--/ row -->
-      </div>
-      <!--/ container -->
-    </section>
-    <!-- /Digital Pakistan Cybersecurity Hackathon 2021 -->
-
-    <!-- Portfolio HackMex 2021 -->
-    <section id="hackmex2021" class="hg_section ptop-20">
-      <div class="container">
-      <div class="row">
-        <div
-	  class="kl-title-block clearfix text-center tbk-symbol--border tbk-icon-pos--after-title">
-          <h4 class="tbk__subtitle fs-18 light-gray">HackMex 2021</h4>
+        <div class="text-center" style="margin-top: 10px;">
+          <input type="radio" name="portfolio-toggle" id="none">
+          <label for="none" class="btn btn-link btn-xs">Collapse</label>
         </div>
-        <!--/ Title element with bottom border -->
-	Another successful HackMex CTF event took place in October 2021.  HackMex CTF gained so much traction in the last two years that participants from all 
-        over the world asked to participate. So this year we had an amazing twist. It was the first year that the private sector was allowed to compete in the event so 
-	there were three different competition categories with separate scoreboards and activity streams: students, private sector and government agencies.
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- OffensiveX 2024 -->
+      <div class="col-xs-12 col-sm-4">
+  		<div class="thumbnail portfolio-card">
+    	<img src="images/portfolio-images/OFFENSIVEX2024/echoctf_model_city_th.jpg" class="img-responsive" alt="OffensiveX 2024">
+    		<div class="caption">
+      			<h4>OffensiveX 2024</h4>
+      			<p class="text-muted small">echoCTF's debut in Greece, featuring a hackable smart city diorama at Athens' premier cybersecurity conference.</p>
+
+      <input type="radio" name="portfolio-toggle" id="offensivex">
+      <label for="offensivex" class="btn btn-default btn-sm">Read more</label>
+
+      <div class="portfolio-details">
+        <p><strong>OffensiveX 2024</strong> marked echoCTF's first event in Greece, held in Athens. The event showcased a hackable diorama of a modern city, providing participants with a hands-on experience in simulating cyberattacks on urban infrastructure.</p>
+        <ul style="padding-left: 20px; margin-bottom: 10px;">
+          <li>Interactive smart city diorama with critical infrastructure components</li>
+          <li>Live demonstrations of cyberattack simulations on urban systems</li>
+          <li>Engagement with international cybersecurity experts and enthusiasts</li>
+          <li>Integration of echoCTF's platform for real-time challenge execution</li>
+        </ul>
+
+        <div class="row">
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/OFFENSIVEX2024/offensivex_competition_area.jpg" target="_blank">
+              <img src="images/portfolio-images/OFFENSIVEX2024/offensivex_competition_area_th.jpg" alt="OffensiveX competition area`">
+            </a>
+            <p class="text-center small">Smart City Diorama</p>
+          </div>
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/OFFENSIVEX2024/offensivex_ctf_participants.jpg" target="_blank">
+              <img src="images/portfolio-images/OFFENSIVEX2024/offensivex_ctf_participants_th.jpg" alt="OffensiveX CTF participants">
+            </a>
+            <p class="text-center small">CTF Participants</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/OFFENSIVEX2024/model_city_closeup.jpg" target="_blank">
+              <img src="images/portfolio-images/OFFENSIVEX2024/model_city_closeup_th.jpg" alt="OffensiveX model city closeup">
+            </a>
+            <p class="text-center small">Model City Closeup</p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 10px;">
+          <input type="radio" name="portfolio-toggle" id="none">
+          <label for="none" class="btn btn-link btn-xs">Collapse</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- AfriHackBox 2024 --->
+	<div class="col-xs-12 col-sm-4">
+	<div class="thumbnail portfolio-card">
+		<img src="images/portfolio-images/MENAISC2018/smart_farm_th.jpg" class="img-responsive" alt="AfriHackBox 2024">
+		<div class="caption">
+			<h4>AfriHackBox 2024</h4>
+			<p class="text-muted small">Part of echoCTF's growing presence in Africa. A high-energy, 24-hour live CTF in Nigeria.</p>
+
+      <input type="radio" name="portfolio-toggle" id="afrihackbox">
+      <label for="afrihackbox" class="btn btn-default btn-sm">Read more</label>
+
+      <div class="portfolio-details">
+        <p><strong>AfriHackBox 2024</strong> was one of several African events powered by <strong>echoCTF</strong>, building momentum across the continent for ethical hacking and cyber readiness.</p>
+        <ul style="padding-left: 20px; margin-bottom: 10px;">
+          <li>24-hour live CTF with over 160 participants</li>
+          <li>Featured a live “Headshot” mini challenge</li>
+          <li>Blended competition with community-building</li>
+        </ul>
+
+        <div class="row">
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/AFRIHACKBOX2024/afrihackbox_event.jpg" target="_blank">
+              <img src="images/portfolio-images/AFRIHACKBOX2024/afrihackbox_event_th.jpg" alt="AfriHackBox Event">
+            </a>
+            <p class="text-center small">AfriHackBox Event</p>
+          </div>
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/AFRIHACKBOX2024/afrihackbox_logo.jpg" target="_blank">
+              <img src="images/portfolio-images/AFRIHACKBOX2024/afrihackbox_logo_th.jpg" alt="AfriHackBox Logo">
+            </a>
+            <p class="text-center small">AfriHackBox Logo</p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 10px;">
+          <input type="radio" name="portfolio-toggle" id="none">
+          <label for="none" class="btn btn-link btn-xs">Collapse</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<!-- BRCTF 2023 - 2024 -->
+	<div class="col-xs-12 col-sm-4">
+		<div class="thumbnail portfolio-card">
+			<img src="images/portfolio-images/BRCTF2024/brctf_participants_th.jpg" class="img-responsive" alt="brCTF 2023–2024">
+		<div class="caption">
+			<h4>brCTF 2023–2024</h4>
+			<p class="text-muted small">Ghana’s flagship CTF series, powered by echoCTF and OffSec. A blend of hacking, teamwork, and real-world challenge.</p>
+
+      <input type="radio" name="portfolio-toggle" id="brctf">
+      <label for="brctf" class="btn btn-default btn-sm">Read more</label>
+
+      <div class="portfolio-details">
+        <p><strong>brCTF</strong> (“Break The Code”) is Ghana’s premier national CTF series, co-organized with <strong>echoCTF</strong> and OffSec. It combines digital and physical challenges in a 24-hour team-based format.</p>
+        <ul style="padding-left: 20px; margin-bottom: 10px;">
+		  <li>Fully sponsored by Echothrust Solutions as part of our commitment to community and education</li>
+          <li>Finals hosted at Accra Digital Centre</li>
+          <li>Strong female participation and mentorship</li>
+          <li>Supported by echoCTF, OffSec, and local partners</li>
+        </ul>
+
+        <div class="row">
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/BRCTF2024/brctf_exhaustion.jpg" target="_blank">
+              <img src="images/portfolio-images/BRCTF2024/brctf_exhaustion_th.jpg" alt="Hard Target">
+            </a>
+            <p class="text-center small">Hard Target</p>
+          </div>
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/BRCTF2024/brctf_solving_challenges.jpg" target="_blank">
+              <img src="images/portfolio-images/BRCTF2024/brctf_solving_challenges_th.jpg" alt="Solving challenges">
+            </a>
+            <p class="text-center small">Solving Challenges</p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 10px;">
+          <input type="radio" name="portfolio-toggle" id="none">
+          <label for="none" class="btn btn-link btn-xs">Collapse</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<!-- HackGDL 2024 -->
+	<div class="col-xs-12 col-sm-4">
+	<div class="thumbnail portfolio-card">
+		<img src="images/portfolio-images/HACKGDL2024/hackgdl_pinata_th.jpg" class="img-responsive" alt="HackGDL 2024">
+		<div class="caption">
+		<h4>HackGDL 2024</h4>
+		<p class="text-muted small">Guadalajara’s premier hacking festival. echoCTF powered the qualifiers for this vibrant, community-driven event.</p>
+
+		<input type="radio" name="portfolio-toggle" id="hackgdl">
+		<label for="hackgdl" class="btn btn-default btn-sm">Read more</label>
+
+		<div class="portfolio-details">
+			<p><strong>HackGDL 2024</strong> brought together Mexico’s cybersecurity community for a weekend of hacking, learning, and collaboration. echoCTF developed and hosted the online qualifiers, setting the stage for an engaging main event.</p>
+			<ul style="padding-left: 20px; margin-bottom: 10px;">
+			<li>echoCTF platform provided as a full sponsorship to support early-stage talent in Mexico</li>
+			<li>Challenges in web, reverse, crypto, and forensics</li>
+			<li>Community-led with strong local partnerships</li>
+			</ul>
+
+			<div class="row">
+			<div class="col-xs-6 portfolio-img">
+				<a href="images/portfolio-images/HACKGDL2024/hackgdl_sponsors.jpg" target="_blank">
+				<img src="images/portfolio-images/HACKGDL2024/hackgdl_sponsors_th.jpg" alt="HackGDL sponsors">
+				</a>
+				<p class="text-center small">HackGDL Sponsors</p>
+			</div>
+			<div class="col-xs-6 portfolio-img">
+				<a href="images/portfolio-images/HACKGDL2024/hackgdl_festive.jpg" target="_blank">
+				<img src="images/portfolio-images/HACKGDL2024/hackgdl_festive_th.jpg" alt="Festive Atmosphere">
+				</a>
+				<p class="text-center small">Festive Atmosphere</p>
+			</div>
+			</div>
+
+			<div class="text-center" style="margin-top: 10px;">
+			<input type="radio" name="portfolio-toggle" id="none">
+			<label for="none" class="btn btn-link btn-xs">Collapse</label>
+			</div>
+		</div>
+		</div>
+	</div>
+	</div>
+
+<!-- Digital Pakistan Cybersecurity Hackathon 2021 -->
+ <div class="col-xs-12 col-sm-4">
+  <div class="thumbnail portfolio-card">
+    <img src="images/portfolio-images/DIGITAL_PAKISTAN2021/digital_pakistan_finals_th.jpg" class="img-responsive" alt="Digital Pakistan Cybersecurity Hackathon 2021">
+    <div class="caption">
+      <h4>Digital Pakistan Cybersecurity Hackathon 2021</h4>
+      <p class="text-muted small">Pakistan’s first nationwide cybersecurity competition. echoCTF powered the technical platform for all rounds.</p>
+
+      <input type="radio" name="portfolio-toggle" id="dpch2021">
+      <label for="dpch2021" class="btn btn-default btn-sm">Read more</label>
+
+      <div class="portfolio-details">
+        <p><strong>Digital Pakistan Cybersecurity Hackathon 2021</strong> was a national initiative to foster cybersecurity talent across Pakistan. echoCTF developed and hosted the technical platform for all qualifying and final rounds.</p>
+        <ul style="padding-left: 20px; margin-bottom: 10px;">
+          <li>Regional rounds in Karachi, Lahore, and Islamabad</li>
+          <li>Finale held in Islamabad</li>
+          <li>Over 1,500 participants trained in pre-event workshops</li>
+          <li>Challenges included web, mobile, network, OS, and speed programming</li>
+        </ul>
+
+        <div class="row">
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/DIGITAL_PAKISTAN2021/digital_pakistan_logstalgia.jpg" target="_blank">
+              <img src="images/portfolio-images/DIGITAL_PAKISTAN2021/digital_pakistan_logstalgia_th.jpg" alt="Simultaneous attacks in finals">
+            </a>
+            <p class="text-center small">Simultaneous Attacks In finals</p>
+          </div>
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/DIGITAL_PAKISTAN2021/digital_pakistan_leaderboard.png" target="_blank">
+              <img src="images/portfolio-images/DIGITAL_PAKISTAN2021/digital_pakistan_leaderboard_th.png" alt="Leaderboard">
+            </a>
+            <p class="text-center small">Leaderboard</p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 10px;">
+          <input type="radio" name="portfolio-toggle" id="none">
+          <label for="none" class="btn btn-link btn-xs">Collapse</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--EESTech Challenge Athens/Thessaloniki 2021 -->
+<div class="col-xs-12 col-sm-4">
+  <div class="thumbnail portfolio-card">
+    <img src="images/portfolio-images/EESTECH2021/eestech_thess_flyer_th.jpg" class="img-responsive" alt="EESTech Challenge 2021">
+    <div class="caption">
+      <h4>EESTech Challenge 2021</h4>
+      <p class="text-muted small">A European-wide student competition with national semifinals and a continental final.</p>
+
+      <input type="radio" name="portfolio-toggle" id="eestech2021">
+      <label for="eestech2021" class="btn btn-default btn-sm">Read more</label>
+
+      <div class="portfolio-details">
+        <p><strong>EESTech Challenge 2021</strong> was a European cybersecurity competition organized by EESTEC, featuring local rounds in Athens and Thessaloniki. echoCTF delivered the CTF competition for the national rounds.</p>
+        <ul style="padding-left: 20px; margin-bottom: 10px;">
+		  <li>Sponsored and hosted both Greek semifinal CTFs</li>
+          <li>Local rounds held in Athens and Thessaloniki</li>
+          <li>Teams competed in a mixed-style CTF format</li> 
+		  <li>Challenges included forensics, reverse engineering, and network exploitation</li>
+        </ul>
+
+        <div class="row">
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/EESTECH2021/eestech_athens_flyer.jpg" target="_blank">
+              <img src="images/portfolio-images/EESTECH2021/eestech_athens_flyer_th.jpg" alt="EESTech 2021 Athens Flyer">
+            </a>
+            <p class="text-center small">EESTech 2021 Athens Flyer</p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 10px;">
+          <input type="radio" name="portfolio-toggle" id="none">
+          <label for="none" class="btn btn-link btn-xs">Collapse</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MENA ISC & Cyber Sabers Hackathon (2017–2019) -->
+<div class="col-xs-12 col-sm-4">
+  <div class="thumbnail portfolio-card">
+    <img src="images/portfolio-images/MENAISC2019/close_city_view_th.jpg" class="img-responsive" alt="MENA ISC & Cyber Sabers Hackathon">
+    <div class="caption">
+      <h4>Cyber Sabers Hackathon (2017–2019)</h4>
+      <p class="text-muted small">Three consecutive years of immersive CTF competitions at MENA ISC, powered by echoCTF.</p>
+
+      <input type="radio" name="portfolio-toggle" id="menaisc">
+      <label for="menaisc" class="btn btn-default btn-sm">Read more</label>
+
+      <div class="portfolio-details">
+        <p><strong>Cyber Sabers Hackathon</strong> was a flagship cybersecurity competition held during the MENA ISC conferences in Riyadh, Saudi Arabia. From 2017 to 2019, echoCTF provided the technical platform and interactive dioramas for these events.</p>
+        <ul style="padding-left: 20px; margin-bottom: 10px;">
+          <li>2019: Expanded challenges reflecting latest security trends</li>
+          <li>2018: 36 teams, 153 participants; introduced signature building models</li>
+          <li>2017: Featured interactive models of Riyadh landmarks</li>
+          <li>Prizes ranged from 20,000 to 50,000 SAR for top teams</li>
+          <li>Participants received certificates of participation</li>
+        </ul>
+
+        <div class="row">
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/MENAISC2019/parking_construction_bulding.jpg" target="_blank">
+              <img src="images/portfolio-images/MENAISC2019/parking_construction_bulding_th.jpg" alt="Construction Site and Car Parking">
+            </a>
+            <p class="text-center small">Construction Site</p>
+          </div>
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/MENAISC2019/airport_departures.jpg" target="_blank">
+              <img src="images/portfolio-images/MENAISC2019/airport_departures_th.jpg" alt="Airport Departures">
+            </a>
+            <p class="text-center small">Airport Departures</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/MENAISC2019/cityview.jpg" target="_blank">
+              <img src="images/portfolio-images/MENAISC2019/cityview_th.jpg" alt="View of the Diorama">
+            </a>
+            <p class="text-center small">Diorama View</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/MENAISC2018/view_of_the_CTF_hall.jpg" target="_blank">
+              <img src="images/portfolio-images/MENAISC2018/view_of_the_CTF_hall_th.jpg" alt="CTF Hall View">
+            </a>
+            <p class="text-center small">CTF Hall View</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/MENAISC2018/view_of_the_model_city.jpg" target="_blank">
+              <img src="images/portfolio-images/MENAISC2018/view_of_the_model_city_th.jpg" alt="echoCTF Model City">
+            </a>
+            <p class="text-center small">echoCTF Model City</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/MENAISC2018/model_city_closer.jpg" target="_blank">
+              <img src="images/portfolio-images/MENAISC2018/model_city_closer_th.jpg" alt="Closer View of the Diorama">
+            </a>
+            <p class="text-center small">Closer View of the Diorama</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/MENAISC2018/smart_farm.jpg" target="_blank">
+              <img src="images/portfolio-images/MENAISC2018/smart_farm_th.jpg" alt="Smart Farm">
+            </a>
+            <p class="text-center small">Smart Farm</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/MENAISC2018/oil_desal_farm.jpg" target="_blank">
+              <img src="images/portfolio-images/MENAISC2018/oil_desal_farm_th.jpg" alt="Oil Factory and Solar Plant">
+            </a>
+            <p class="text-center small">Oil Factory and Solar Plant</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/MENAISC2017/attempted_attack_on_a_board.jpg" target="_blank">
+              <img src="images/portfolio-images/MENAISC2017/attempted_attack_on_a_board_th.jpg" alt="Attempted attack on the aiport terminal display">
+            </a>
+            <p class="text-center small">Attempted Attack</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/MENAISC2017/fountain.jpg" target="_blank">
+              <img src="images/portfolio-images/MENAISC2017/fountain_th.jpg" alt="echoCTF Fountain">
+            </a>
+            <p class="text-center small">echoCTF Fountain</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/MENAISC2017/during_the_hackathon.jpg" target="_blank">
+              <img src="images/portfolio-images/MENAISC2017/during_the_hackathon_th.jpg" alt="During the Event">
+            </a>
+            <p class="text-center small">During the Event</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/MENAISC2017/custom_made_buildings.jpg" target="_blank">
+              <img src="images/portfolio-images/MENAISC2017/custom_made_buildings_th.jpg" alt="The custom made model buildings of Riyadh">
+            </a>
+            <p class="text-center small">Model buildings of Riyadh</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/MENAISC2017/oil_pumps.jpg" target="_blank">
+              <img src="images/portfolio-images/MENAISC2017/oil_pumps_th.jpg" alt="Oil Pumps of the MENA ISC 2017 echoCiTy-F model city">
+            </a>
+            <p class="text-center small">2017 echoCiTy-F Oil Pumps</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/MENAISC2017/echocity-f.jpg" target="_blank">
+              <img src="images/portfolio-images/MENAISC2017/echocity-f_th.jpg" alt="Full view of the model city">
+            </a>
+            <p class="text-center small">2017 Model City</p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 10px;">
+          <input type="radio" name="portfolio-toggle" id="none">
+          <label for="none" class="btn btn-link btn-xs">Collapse</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- IDEX 2019 -->
+<div class="col-xs-12 col-sm-4">
+  <div class="thumbnail portfolio-card">
+    <img src="images/portfolio-images/IDEX2019/full_view_th.jpg" class="img-responsive" alt="DarkMatter for IDEX 2019">
+    <div class="caption">
+      <h4>DarkMatter for IDEX 2019</h4>
+      <p class="text-muted small">Cyberattack simulation for defense sector, live at the International Defence Exhibition in Abu Dhabi.</p>
+
+      <input type="radio" name="portfolio-toggle" id="idex2019">
+      <label for="idex2019" class="btn btn-default btn-sm">Read more</label>
+
+      <div class="portfolio-details">
+        <p><strong>IDEX 2019</strong> featured a live demonstration platform developed by echoCTF, illustrating the impact of cyberattacks on military infrastructure through a custom-built diorama.</p>
+        <ul style="padding-left: 20px; margin-bottom: 10px;">
+          <li>Simulated cyberattacks on military control systems</li>
+          <li>Real-time control of diorama elements like UAVs and hangar doors</li>
+          <li>Demonstrated vulnerabilities in defense infrastructure</li>
+          <li>Interactive presentation for defense industry professionals</li>
+          <li>Showcased echoCTF's capabilities in military cybersecurity training</li>
+        </ul>
+
+        <div class="row">
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/IDEX2019/drone_control_room.jpg" target="_blank">
+              <img src="images/portfolio-images/IDEX2019/drone_control_room_th.jpg" alt="Drone Control Room">
+            </a>
+            <p class="text-center small">Drone Control Room</p>
+          </div>
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/IDEX2019/drone_hangar.jpg" target="_blank">
+              <img src="images/portfolio-images/IDEX2019/drone_hangar_th.jpg" alt="Automated Drone Hangar">
+            </a>
+            <p class="text-center small">Automated Drone Hangar</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/IDEX2019/fuel_station.jpg" target="_blank">
+              <img src="images/portfolio-images/IDEX2019/fuel_station_th.jpg" alt="Fuel Station">
+            </a>
+            <p class="text-center small">Fuel Station</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/IDEX2019/display.jpg" target="_blank">
+              <img src="images/portfolio-images/IDEX2019/display_th.jpg" alt="Inside the Base HQ">
+            </a>
+            <p class="text-center small">Inside the Base HQ</p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 10px;">
+          <input type="radio" name="portfolio-toggle" id="none">
+          <label for="none" class="btn btn-link btn-xs">Collapse</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ENISA 2018 -->
+ <div class="col-xs-12 col-sm-4">
+  <div class="thumbnail portfolio-card">
+    <img src="images/portfolio-images/ENISA_HTA/jet_bridge_th.jpg" class="img-responsive" alt="ENISA 'Hack the Airport' at Cyber Europe 2018">
+    <div class="caption">
+      <h4>ENISA "Hack the Airport" at Cyber Europe 2018</h4>
+      <p class="text-muted small">Interactive airport infrastructure CTF scenario developed for ENISA’s pan-European cyber crisis exercise.</p>
+
+      <input type="radio" name="portfolio-toggle" id="enisa2018">
+      <label for="enisa2018" class="btn btn-default btn-sm">Read more</label>
+
+      <div class="portfolio-details">
+        <p><strong>Cyber Europe 2018</strong>, organized by ENISA, featured the "Hack the Airport" scenario—a scaled model of an airport infrastructure used to simulate cyber-attacks on critical systems. echoCTF developed the technical platform enabling participants to interact with and exploit various airport components.</p>
+        <ul style="padding-left: 20px; margin-bottom: 10px;">
+          <li>Simulated control of jet bridges, radars, and moving walkways</li>
+          <li>Interactive departures board manipulation</li>
+          <li>Realistic airport environment for hands-on cybersecurity training</li>
+          <li>Part of the 5th pan-European cyber crisis exercise</li>
+          <li>Enhanced participant engagement through physical infrastructure</li>
+        </ul>
+
+        <div class="row">
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/ENISA_HTA/departure_hall_close.jpg" target="_blank">
+              <img src="images/portfolio-images/ENISA_HTA/departure_hall_close_th.jpg" alt="Departures Hall">
+            </a>
+            <p class="text-center small">Departures Hall</p>
+          </div>
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/ENISA_HTA/transfers_hall_closer.jpg" target="_blank">
+              <img src="images/portfolio-images/ENISA_HTA/transfers_hall_closer_th.jpg" alt="Transfers Hall">
+            </a>
+            <p class="text-center small">Transfers Hall</p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 10px;">
+          <input type="radio" name="portfolio-toggle" id="none">
+          <label for="none" class="btn btn-link btn-xs">Collapse</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DU Hackathon 2014 & 2016 -->
+<div class="col-xs-12 col-sm-4">
+  <div class="thumbnail portfolio-card">
+    <img src="images/portfolio-images/portfolio14-3-fu_th.jpg" class="img-responsive" alt="du Hackathon 2014 & 2016">
+    <div class="caption">
+      <h4>du Hackathon 2014 & 2016</h4>
+      <p class="text-muted small">Introduced the world’s first CTF with a physical, hackable smart city diorama.</p>
+
+      <input type="radio" name="portfolio-toggle" id="duhackathon">
+      <label for="duhackathon" class="btn btn-default btn-sm">Read more</label>
+
+      <div class="portfolio-details">
+        <p><strong>du Hackathon</strong> marked the inception of echoCTF's physical diorama-based cybersecurity competitions, setting a new standard for interactive learning and engagement.</p>
+        <ul style="padding-left: 20px; margin-bottom: 10px;">
+          <li>2014: Debut of the first smart city diorama in a CTF competition</li>
+          <li>2016: Introduction of echoCiTy-F with over 200 hackable elements</li>
+          <li>Simulated control over trains, power grids, airports, and more</li>
+          <li>Real-time visualizations for participants and spectators</li>
+          <li>Top team awarded AED 20,000 and participation certificates</li>
+        </ul>
+
+        <div class="row">
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/portfolio14-2-fu.jpg" target="_blank">
+              <img src="images/portfolio-images/portfolio14-2-fu_th.jpg" alt="echoCiTy-F's Debut">
+            </a>
+            <p class="text-center small">echoCiTy-F's Debut</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/portfolio14-4-fu.jpg" target="_blank">
+              <img src="images/portfolio-images/portfolio14-4-fu_th.jpg" alt="Visuals from Attacks">
+            </a>
+            <p class="text-center small">Visuals from Attacks</p>
+          </div>	
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/portfolio14-5-fu.jpg" target="_blank">
+              <img src="images/portfolio-images/portfolio14-5-fu_th.jpg" alt="Explaining echoCiTy-F">
+            </a>
+            <p class="text-center small">Explaining echoCiTy-F</p>
+          </div>		  
+          <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/portfolio14-1-fu.jpg" target="_blank">
+              <img src="images/portfolio-images/portfolio14-1-fu_th.jpg" alt="du Hackathon 2014 Dubai">
+            </a>
+            <p class="text-center small">du Hackathon 2014 Dubai</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/portfolio14-3-fu.jpg" target="_blank">
+              <img src="images/portfolio-images/portfolio14-3-fu_th.jpg" alt="du Hackathon 2014 Diorama">
+            </a>
+            <p class="text-center small">du Hackathon 2014 Diorama</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/portfolio14-6-fu.jpg" target="_blank">
+              <img src="images/portfolio-images/portfolio14-6-fu_th.jpg" alt="Awarding echoCTF Team">
+            </a>
+            <p class="text-center small">Awarding echoCTF Team</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/portfolio16-6-fu.jpg" target="_blank">
+              <img src="images/portfolio-images/portfolio16-6-fu_th.jpg" alt="Network Traffic Visuals">
+            </a>
+            <p class="text-center small">Network Traffic Visuals</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/portfolio15-6-fu.jpg" target="_blank">
+              <img src="images/portfolio-images/portfolio15-6-fu_th.jpg" alt="1st Place Winners">
+            </a>
+            <p class="text-center small">1st Place Winners</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/portfolio2-fu.jpg" target="_blank">
+              <img src="images/portfolio-images/portfolio2-fu_th.jpg" alt="2016 Diorama">
+            </a>
+            <p class="text-center small">2016 Diorama</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/portfolio4-fu.jpg" target="_blank">
+              <img src="images/portfolio-images/portfolio4-fu_th.jpg" alt="Night View of echoCiTy-F">
+            </a>
+            <p class="text-center small">Night View of echoCiTy-F</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/portfolio9-fu.jpg" target="_blank">
+              <img src="images/portfolio-images/portfolio9-fu_th.jpg" alt="Construction Site">
+            </a>
+            <p class="text-center small">Construction Site</p>
+          </div>
+		  <div class="col-xs-6 portfolio-img">
+            <a href="images/portfolio-images/portfolio10-6-fu.jpg" target="_blank">
+              <img src="images/portfolio-images/portfolio10-6-fu_th.jpg" alt="Showcasing echoCTF">
+            </a>
+            <p class="text-center small">Showcasing echoCTF</p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 10px;">
+          <input type="radio" name="portfolio-toggle" id="none">
+          <label for="none" class="btn btn-link btn-xs">Collapse</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
 	
-	This year’s challenges incorporated real life attack and defense scenarios in a simulated Smart City environment as well as different jeopardy challenges such as 
-        forensics, reverse engineering, binary analysis, incident investigation and more.
-	      
-	As the organisers stated, apart from the lessons learned throughout this event, this year gave the opportunity for the academia, government and private sector to 
-        cooperate, strengthen their social ties and productivity and prove that cybersecurity works best when sharing good practices and embrace teamwork.
-
-        <br> <br>
-        <div class="col-md-12 col-sm-12">
-          <div class="row">
-            <div class="col-sm-3">
-              <!-- Portfolio image #1 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/HACKMEX2021/hackmex_flyer.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="HackMex2021 Flyer"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/HACKMEX2021/hackmex_flyer_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">HackMex2021 Flyer</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #1 -->
-            </div><!--/ col-sm-4 -->
-
-            <div class="col-sm-3">
-              <!-- Portfolio image #1 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/HACKMEX2021/hackmex_mob_activity_stream.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="Mobile Activity Stream"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/HACKMEX2021/hackmex_mob_activity_stream_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">Mobile Activity Stream</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #2 -->
-            </div><!--/ col-sm-4 -->
-
-          </div><!--/ row -->
-        </div><!--/ col-md-12 col-sm-12 -->
-      </div>
-      <!--/ row -->
-      </div>
-      <!--/ container -->
-    </section>
-    <!-- /Portfolio HackMex 2021 -->
  
-    <!-- Portfolio EESTech Challenge 2021 -->
-    <section id="eestech2021" class="hg_section ptop-20">
-      <div class="container">
-      <div class="row">
-        <div
-	  class="kl-title-block clearfix text-center tbk-symbol--border tbk-icon-pos--after-title">
-          <h4 class="tbk__subtitle fs-18 light-gray">EESTech Challenge Athens/Thessaloniki 2021</h4>
-        </div>
-        <!--/ Title element with bottom border -->
-	A non-profit CTF competition was developed for this year's national EESTech Challenge for both EETech LC Athens and LC Thessaloniki. 
-        The participants competed in teams, claiming the qualification to the final round of Europe, which took place in Belgrade. The participants battled in a mixed 
-        style CTF with challenges of varying difficulty which included topics such forensics, reverse engineering, network and operating systems exploitation,  
-	incident investigation and many more. 
-
-        <br> <br>
-        <div class="col-md-12 col-sm-12">
-          <div class="row">
-            <div class="col-sm-3">
-              <!-- Portfolio image #1 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/EESTECH2021/eestech_athens_flyer.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="EESTech Athens Flyer"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/EESTECH2021/eestech_athens_flyer_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">EESTech Athens Flyer</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #1 -->
-            </div><!--/ col-sm-4 -->
-
-            <div class="col-sm-3">
-              <!-- Portfolio image #1 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/EESTECH2021/eestech_thess_flyer.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="EESTech Thessaloniki Flyer"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/EESTECH2021/eestech_thess_flyer_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">EESTech Thessaloniki Flyer</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #2 -->
-            </div><!--/ col-sm-4 -->
-
-          </div><!--/ row -->
-        </div><!--/ col-md-12 col-sm-12 -->
-      </div>
-      <!--/ row -->
-      </div>
-      <!--/ container -->
-    </section>
-    <!-- /Portfolio EESTech Challenge 2021 -->
-       
-    <!-- Portfolio HackMex 2020 -->
-    <section id="hackmex2020" class="hg_section ptop-20">
-      <div class="container">
-      <div class="row">
-        <div
-	  class="kl-title-block clearfix text-center tbk-symbol--border tbk-icon-pos--after-title">
-          <h4 class="tbk__subtitle fs-18 light-gray">HackMex 2020</h4>
-        </div>
-        <!--/ Title element with bottom border -->
-        For the second consecutive year we developed the HackMex CTF for the Instituto
-        Politécnico Nacional of Mexico. This year’s challenges included digital
-        forensics, reverse engineering, binary analysis, vulnerability identification, incident investigation and more.
-
-        The participants were divided into 2 categories, the Academics and the
-        .GOB &amp; .ORG. Each of the categories had separate leaderboards and
-        activity streams.
-
-        The participants included university students from all around Mexico as
-        well as government, military and intelligence services.
-        <br> <br>
-        <div class="col-md-12 col-sm-12">
-          <div class="row">
-            <div class="col-sm-3">
-              <!-- Portfolio image #1 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/HACKMEX2020/hackmex-leaderboards-academic.png"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="Academic Leaderboard"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/HACKMEX2020/hackmex-leaderboards-academic_th.png"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">Academic leaderboard</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #1 -->
-            </div><!--/ col-sm-4 -->
-
-            <div class="col-sm-3">
-              <!-- Portfolio image #1 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/HACKMEX2020/hackmex-gource-visuals.png"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="Visuals from attacks"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/HACKMEX2020/hackmex-gource-visuals_th.png"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">Visuals from attacks</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #2 -->
-            </div><!--/ col-sm-4 -->
-
-            <div class="col-sm-3">
-              <!-- Portfolio image #1 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/HACKMEX2020/hackmex-leaderboards-gob.png"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title=".GOB Leaderboards"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/HACKMEX2020/hackmex-leaderboards-gob_th.png"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">.GOB Leaderboards</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #3 -->
-            </div><!--/ col-sm-4 -->
-
-          </div><!--/ row -->
-        </div><!--/ col-md-12 col-sm-12 -->
-      </div>
-      <!--/ row -->
-      </div>
-      <!--/ container -->
-    </section>
-    <!-- /Portfolio HackMex 2020 -->
-
-
-
-    <!-- Portfolio HackMex 2019 -->
-    <section id="hackmex2019" class="hg_section ptop-80">
-      <div class="container">
-      <div class="row">
-        <div
-          class="kl-title-block clearfix text-center tbk-symbol--border tbk-icon-pos--after-title">
-          <h4 class="tbk__subtitle fs-18 light-gray">HackMex 2019</h4>
-        </div>
-        <!--/ Title element with bottom border -->
-An online CTF competition was developed for the Instituto Politécnico Nacional
-of Mexico. The tournament was held by The National Polytechnic Institute (IPN).
-The scope of HackMex 2019 was to measure the technological capacity of Mexico,
-in an academic environment with international projection. The competition
-attracted not only students from different universities, but also cyber
-security professionals, making it the largest CTF competition in the country.
-Due to high demand, the competition was completed in two stages, the
-qualification round and finals. The event gained national media attention.
-        <br> <br>
-        <div class="col-md-12 col-sm-12">
-          <div class="row">
-            <div class="col-sm-3">
-              <!-- Portfolio image #1 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/HACKMEX2019/HackMex-CTF-area.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="Competition area"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/HACKMEX2019/HackMex-CTF-area_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">Competition area</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #1 -->
-            </div><!--/ col-sm-4 -->
-
-            <div class="col-sm-3">
-              <!-- Portfolio image #1 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/HACKMEX2019/HackMex-CTF-area2.jpeg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="Happy Teams"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/HACKMEX2019/HackMex-CTF-area2_th.jpeg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">Happy Teams</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #2 -->
-            </div><!--/ col-sm-4 -->
-
-            <div class="col-sm-3">
-              <!-- Portfolio image #1 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/HACKMEX2019/HackMex-CTF-area3.jpeg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="Another view of the CTF Area"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/HACKMEX2019/HackMex-CTF-area3_th.jpeg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">Another view of the CTF Area</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #3 -->
-            </div><!--/ col-sm-4 -->
-
-
-            <div class="col-sm-3">
-              <!-- Portfolio image #1 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/HACKMEX2019/echoCTF-visuals.jpeg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="Network visuals provided by echoCTF"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/HACKMEX2019/echoCTF-visuals_th.jpeg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">Network visuals provided by echoCTF</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #3 -->
-            </div><!--/ col-sm-4 -->
-
-
-          </div><!--/ row -->
-        </div><!--/ col-md-12 col-sm-12 -->
-      </div>
-      <!--/ row -->
-      </div>
-      <!--/ container -->
-    </section>
-    <!--/ Portfolio HackMex2019 -->
-
-    <!-- Portfolio MENAISC2019 -->
-    <section id="menaisc2019" class="hg_section ptop-80">
-      <div class="container">
-      <div class="row">
-        <div
-          class="kl-title-block clearfix text-center tbk-symbol--border tbk-icon-pos--after-title">
-          <h4 class="tbk__subtitle fs-18 light-gray">Cyber Sabers Hackathon - MENA ISC 2019</h4>
-        </div>
-        For the third year in a row, we delivered an echoCTF based competition
-        for the Cyber Sabers Hackathon. The competition took place during the
-        two days of the MENA ISC 2019 Security Conference held in Riyadh, KSA.
-        This year we included even more challenges and flags that represented
-        the latest security trends of 2019. We also added more defensive
-        challenges to test how the participants act in real life situations.
-        <br> <br>
-	<div class="col-md-12 col-sm-12">
-          <div class="row">
-            <div class="col-sm-3">
-              <!-- Portfolio image #1 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/MENAISC2019/cityview.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="View of the diorama"></a>
-                  <!--/ Pop-up image -->      
-	          
-	          <!-- Image -->
-                  <img src="images/portfolio-images/MENAISC2019/cityview_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-			
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-		      
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">View of the diorama</h3>
-			
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #1 -->
-            </div><!--/ col-sm-4 -->
-
-            <div class="col-sm-3">
-              <!-- Portfolio image #2 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/MENAISC2019/parking_construction_bulding.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="Construction site, Car parking"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/MENAISC2019/parking_construction_bulding_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">Construction site, Car parking</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #2 -->
-            </div><!--/ col-sm-3 -->
-
-            <div class="col-sm-3">
-              <!-- Portfolio image #3 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/MENAISC2019/airport_departures.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="Airport departures"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/MENAISC2019/airport_departures_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">Airport departures</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #3 -->
-            </div><!--/ col-sm-4 -->
-
-            <div class="col-sm-3">
-              <!-- Portfolio image #4 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/MENAISC2019/close_city_view.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="A closer view of the diorama"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/MENAISC2019/close_city_view_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">A closer view of the diorama</h3>
-
-                </div><!--/ Portfolio entry -->
-              </div><!--/ Portfolio image #4 -->
-            </div><!--/ col-sm-4 -->
-
-	  </div>
-          <!--/ col-sm-4 -->
-          <div class="col-sm-3"></div>
-          <!--/ col-sm-4 -->
-        </div>
-        <!--/ col-md-12 col-sm-12 -->
-      </div>
-      <!--/ row -->
-      </div>
-      <!--/ container -->
-    </section>
-    <!--/ Portfolio category 3 columns section with custom top padding -->
-
-
-		
-		
-    <!-- Portfolio category 3 columns section with custom top padding -->
-    <section id="portfolio1" class="hg_section ptop-80">
-      <div class="container">
-      <div class="row">
-        <div
-          class="kl-title-block clearfix text-center tbk-symbol--border tbk-icon-pos--after-title">
-          <h4 class="tbk__subtitle fs-18 light-gray">IDEX 2019</h4>
-        </div>
-        <!--/ Title element with bottom border -->
-        A demonstration platform, created for one of our clients for the needs of the IDEX 2019,
-        which perfectly demonstrates the diversity of our platform. This military themed platform
-        is comprised of echoCTF targets and a diorama specifically tailored to illustrate the effects
-        of security lapses on modern military facilities. A presenter attacks and takes control of
-        systems (echoCTF targets) of the military facility which control various infrastructure
-        elements of the diorama through real-life services. The attacks result in opening the automated
-        hangar doors, take control of a UAV, bypass authorization checks on gates and more.
-        <br> <br>
-        <div class="col-md-12 col-sm-12">
-          <div class="row">
-            <div class="col-sm-3">
-              <!-- Portfolio image #1 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/IDEX2019/full_view.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="View of the diorama"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/IDEX2019/full_view_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title"> View of the diorama</h3>
-
-                </div>
-                <!--/ Portfolio entry -->
-              </div>
-              <!--/ Portfolio image #1 -->
-            </div>
-            <div class="col-sm-3">
-              <!-- Portfolio image #2 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/IDEX2019/drone_control_room.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="View of the drone control room"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/IDEX2019/drone_control_room_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">View of the drone control room</h3>
-
-                </div>
-                <!--/ Portfolio entry -->
-              </div>
-              <!--/ Portfolio image #2 -->
-            </div>
-            <div class="col-sm-3">
-              <!-- Portfolio image #3 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/IDEX2019/drone_hangar.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="The automated drone hangar"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/IDEX2019/drone_hangar_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">The automated drone hangar</h3>
-
-                </div>
-                <!--/ Portfolio entry -->
-              </div>
-              <!--/ Portfolio image #3 -->
-            </div>
-            <div class="col-sm-3">
-              <!-- Portfolio image #4 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/IDEX2019/fuel_station.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="The fuel station"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/IDEX2019/fuel_station_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">The fuel station</h3>
-
-                </div>
-                <!--/ Portfolio entry -->
-              </div>
-              <!--/ Portfolio image #4 -->
-            </div>
-           </div>
-          <!--/ col-sm-3 -->
-          <div class="col-sm-3"></div>
-          <!--/ col-sm-3 -->
-        </div>
-        <!--/ col-md-12 col-sm-12 -->     
-      </div>
-      <!--/ row -->
-      
-       <div class="row">
-	      <div class="col-sm-3">
-              <!-- Portfolio image #5 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/IDEX2019/display.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="View of the display inside the base HQ"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/IDEX2019/display_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">View of the display inside the base HQ</h3>
-
-                </div>
-                <!--/ Portfolio entry -->
-              </div>
-              <!--/ Portfolio image #5 -->
-            </div>
-          </div>
-          <!--/ col-sm-3 -->
-          <div class="col-sm-3"></div>
-          <!--/ col-sm-3 -->
-        </div>
-        <!--/ col-md-12 col-sm-12 -->
-      </div>
-      <!--/ row -->
-      </div>
-      <!--/ container -->
-    </section>
-    <!--/ Portfolio category 3 columns section with custom top padding -->
-
-    <!-- Portfolio category 3 columns section with custom top padding -->
-    <section id="portfolio2" class="hg_section ptop-80">
-      <div class="container">
-      <div class="row">
-        <div
-          class="kl-title-block clearfix text-center tbk-symbol--border tbk-icon-pos--after-title">
-          <h4 class="tbk__subtitle fs-18 light-gray">Cyber Sabers Hackathon - MENA ISC 2018</h4>
-        </div>
-        <!--/ Title element with bottom border -->
-        For the second year in a row, <strong>Echothrust Solutions</strong> was tasked to
-        deliver an echoCTF based competition for the Cyber Sabers Hackathon. The competition took
-        place during the two days of the MENA ISC 2018 and included 36 teams and 153 participants.
-        This year, we included even more custom made models of signature buildings of Riyadh, Jeddah,
-        Kuwait and Dubai. Besides the usual offensive challenges, programming and defensive challenges
-        were also developed. The top scoring teams were awarded with prizes of 50,000 to 20,000 SAR and
-        every participant was awarded with a certificate of participation. <br> <br>
-        <div class="col-md-12 col-sm-12">
-          <div class="row">
-            <div class="col-sm-3">
-              <!-- Portfolio image #1 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/MENAISC2018/view_of_the_CTF_hall.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="View of the CTF Hall"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/MENAISC2018/view_of_the_CTF_hall_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title"> View of the CTF Hall</h3>
-
-                </div>
-                <!--/ Portfolio entry -->
-              </div>
-              <!--/ Portfolio image #1 -->
-            </div>
-            <div class="col-sm-3">
-              <!-- Portfolio image #2 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/MENAISC2018/view_of_the_model_city.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="View of the echoCiTy-F model city"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/MENAISC2018/view_of_the_model_city_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">View of the echoCiTy-F model city</h3>
-
-                </div>
-                <!--/ Portfolio entry -->
-              </div>
-              <!--/ Portfolio image #2 -->
-            </div>
-            <div class="col-sm-3">
-              <!-- Portfolio image #3 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/MENAISC2018/model_city_closer.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="A closer view of echoCiTy-F"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/MENAISC2018/model_city_closer_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">A closer view of echoCiTy-F</h3>
-
-                </div>
-                <!--/ Portfolio entry -->
-              </div>
-              <!--/ Portfolio image #3 -->
-            </div>
-            <div class="col-sm-3">
-              <!-- Portfolio image #4 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/MENAISC2018/support_team_in_action.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="Our support team in action"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/MENAISC2018/support_team_in_action_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">Our support team in action</h3>
-
-                </div>
-                <!--/ Portfolio entry -->
-              </div>
-              <!--/ Portfolio image #4 -->
-            </div>
-          </div>
-          <!--/ col-sm-3 -->
-          <div class="col-sm-4"></div>
-          <!--/ col-sm-4 -->
-        </div>
-        <!--/ col-md-12 col-sm-12 -->
-      </div>
-      <!--/ row -->
-	      
-       <div class="row">      
-            <div class="col-sm-3">
-              <!-- Portfolio image #5 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/MENAISC2018/smart_farm.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="The smart farm of echoCiTy-F"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/MENAISC2018/smart_farm_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">The smart farm of echoCiTy-F</h3>
-
-                </div>
-                <!--/ Portfolio entry -->
-              </div>
-              <!--/ Portfolio image #5 -->
-            </div>
-            <div class="col-sm-3">
-              <!-- Portfolio image #6 -->
-              <div class="portfolio-item kl-has-overlay">
-                <!-- Intro image wrapper -->
-                <div class="img-intro">
-                  <!-- Pop-up image -->
-                  <a href="images/portfolio-images/MENAISC2018/oil_desal_farm.jpg"
-                    data-type="image" data-lightbox="image" class="hoverLink"
-                    title="The Oil factory and Solar plant"></a>
-                  <!--/ Pop-up image -->
-
-                  <!-- Image -->
-                  <img src="images/portfolio-images/MENAISC2018/oil_desal_farm_th.jpg"
-                    class="img-responsive" title="pic" alt="pic" />
-
-                  <!-- Hover overlay -->
-                  <div class="overlay">
-                    <!-- Overlay wrapper -->
-                    <div class="overlay-inner">
-                      <!-- Icon =.glyphicon-picture -->
-                      <span class="glyphicon glyphicon-picture"></span>
-                    </div>
-                    <!--/ Overlay wrapper -->
-                  </div>
-                  <!--/ Hover overlay -->
-                </div>
-                <!--/ Intro image wrapper -->
-
-                <!-- Portfolio entry -->
-                <div class="portfolio-entry">
-                  <!-- Title with link -->
-                  <h3 class="title">The Oil factory and Solar plant</h3>
-
-                </div>
-                <!--/ Portfolio entry -->
-              </div>
-              <!--/ Portfolio image #6 -->
-            </div>
-          </div>
-          <!--/ col-sm-3 -->
-          <div class="col-sm-4"></div>
-          <!--/ col-sm-4 -->
-        </div>
-        <!--/ col-md-12 col-sm-12 -->
-      </div>
-      <!--/ row -->
-      </div>
-      <!--/ container -->
-    </section>
-    <!--/ Portfolio category 3 columns section with custom top padding -->
-
-
-    <!-- Portfolio category 3 columns section with custom top padding -->
-    <section id="portfolio3" class="hg_section ptop-80">
-    		<div class="container">
-  				<div class="row">
-              <!-- Title element with bottom border -->
-              <div
-                class="kl-title-block clearfix text-center tbk-symbol--border tbk-icon-pos--after-title">
-                <h4 class="tbk__subtitle fs-18 light-gray">ENISA "Hack the Airport" at Cyber Europe 2018</h4>
-              </div>
-              <!--/ Title element with bottom border -->
-              European Network and Information Security Agency (ENISA EU Agency) "Hack the Airport"
-              concept includes airport infrastructure CTF scenarios which are visualized through a scaled
-              model of an airport. ENISA Hack the airport is utilized as part of the 5th pan European cyber
-              crisis exercise, Cyber Europe 2018 (CE2018). The scenarios include obtaining control of a jet
-              bridge, the radar, a moving walkway, the departures board and more.
-              <br> <br>
-              <div class="col-md-12 col-sm-12">
-                <div class="row">
-                  <div class="col-sm-3">
-                    <!-- Portfolio item #1 -->
-                    <div class="portfolio-item kl-has-overlay">
-                      <!-- Intro image wrapper -->
-                      <div class="img-intro">
-                        <!-- Pop-up image -->
-                        <a href="images/portfolio-images/ENISA_HTA/transfers_hall_closer.jpg"
-                          data-type="image" data-lightbox="image" class="hoverLink"
-                          title="Close view of the transfers hall"></a>
-                        <!--/ Pop-up image -->
-
-                        <!-- Image -->
-                        <img src="images/portfolio-images/ENISA_HTA/transfers_hall_closer_th.jpg"
-                          class="img-responsive" title="Close view of the transfers hall" alt="pic" />
-
-                        <!-- Hover overlay -->
-                        <div class="overlay">
-                          <!-- Overlay wrapper -->
-                          <div class="overlay-inner">
-                            <!-- Icon =.glyphicon-picture -->
-                            <span class="glyphicon glyphicon-picture"></span>
-                          </div>
-                          <!--/ Overlay wrapper -->
-                        </div>
-                        <!--/ Hover overlay -->
-                      </div>
-                      <!--/ Intro image wrapper -->
-
-                      <!-- Portfolio entry -->
-                      <div class="portfolio-entry">
-                        <!-- Title with link -->
-                        <h3 class="title">Close view of the transfers hall</h3>
-                        <!-- Description .pt-cat-desc -->
-                      </div>
-                      <!--/ Portfolio entry -->
-                    </div>
-                    <!--/ Portfolio item #1 -->
-                  </div>
-                  <!--/ col-sm-4 -->
-
-                  <div class="col-sm-3">
-                    <!-- Portfolio item #2 -->
-                    <div class="portfolio-item kl-has-overlay">
-                      <!-- Intro image wrapper -->
-                      <div class="img-intro">
-                        <!-- Pop-up image -->
-                        <a href="images/portfolio-images/ENISA_HTA/departure_hall_close.jpg"
-                          data-type="image" data-lightbox="image" class="hoverLink"
-                          title="A closer view of departures hall"></a>
-                        <!--/ Pop-up image -->
-
-                        <!-- Image -->
-                        <img src="images/portfolio-images/ENISA_HTA/departure_hall_close_th.jpg"
-                          class="img-responsive" title="A closer view of departures hall" alt="pic" />
-
-                        <!-- Hover overlay -->
-                        <div class="overlay">
-                          <!-- Overlay wrapper -->
-                          <div class="overlay-inner">
-                            <!-- Icon =.glyphicon-picture -->
-                            <span class="glyphicon glyphicon-picture"></span>
-                          </div>
-                          <!--/ Overlay wrapper -->
-                        </div>
-                        <!--/ Hover overlay -->
-                      </div>
-                      <!--/ Intro image wrapper -->
-
-                      <!-- Portfolio entry -->
-                      <div class="portfolio-entry">
-                        <!-- Title with link -->
-                        <h3 class="title">A closer view of departures hall</h3>
-                      </div>
-                      <!--/ Portfolio entry -->
-                    </div>
-                    <!--/ Portfolio item #2 -->
-                  </div>
-                  <!--/ col-sm-4 -->
-
-                  <div class="col-sm-3">
-                    <!-- Portfolio item #3 -->
-                    <div class="portfolio-item kl-has-overlay">
-                      <!-- Intro image wrapper -->
-                      <div class="img-intro">
-                        <!-- Pop-up image -->
-                        <a href="images/portfolio-images/ENISA_HTA/jet_bridge.jpg"
-                          data-type="image" data-lightbox="image" class="hoverLink"
-                          title="View of the jet bridge and departures hall"></a>
-                        <!--/ Pop-up image -->
-
-                        <!-- Image -->
-                        <img src="images/portfolio-images/ENISA_HTA/jet_bridge_th.jpg"
-                          class="img-responsive" title="View of the jet bridge and departures hall" alt="pic" />
-
-                        <!-- Hover overlay -->
-                        <div class="overlay">
-                          <!-- Overlay wrapper -->
-                          <div class="overlay-inner">
-                            <!-- Icon = .glyphicon-picture -->
-                            <span class="glyphicon glyphicon-picture"></span>
-                          </div>
-                          <!--/ Overlay wrapper -->
-                        </div>
-                        <!--/ Hover overlay -->
-                      </div>
-                      <!--/ Intro image wrapper -->
-
-                      <!-- Portfolio entry -->
-                      <div class="portfolio-entry">
-                        <!-- Title with link -->
-                        <h3 class="title">View of the jet bridge and departures hall</h3>
-                      </div>
-                      <!--/ Portfolio entry -->
-                    </div>
-                    <!--/ Portfolio item #3 -->
-                  </div>
-                  <div class="clear"></div>
-                </div>
-                <!--/ row -->
-
-              </div>
-              <!--/ col-md-12 col-sm-12 -->
-            </div>
-            <!--/ row -->
-          </div>
-
-
-        </div>
-        <!--/ row -->
-
-        <!--/ container -->
-      </section>
-      <!--/ Portfolio category 3 columns section with custom top padding -->
-
-      <!-- Portfolio category 3 columns section with custom top padding -->
-      <section id="portfolio4" class="hg_section ptop-80">
-  			<div class="container">
-				<div class="row">
-					<div
-						class="kl-title-block clearfix text-center tbk-symbol--border tbk-icon-pos--after-title">
-						<h4 class="tbk__subtitle fs-18 light-gray">MENA ISC 2017</h4>
-					</div>
-					<!--/ Title element with bottom border -->
-					As part of the MENA ISC 2017, a Hackathon competition took place and students of
-					more than 10 Universities across KSA (Saudi Arabia) participated. This
-					time, amongst other elements usually included on <strong>echoCiTy-F</strong>,
-					custom made models of signature buildings of the city of Riyadh were constructed.
-					Along with other challenges on information systems and infrastructure elements, aspects
-					of the custom made buildings could also be controlled like the elevator and lights
-					of the Kingdom Tower and lights of the Burj Rafal tower. The top four point scoring
-					teams were awarded with prizes of 50,000 to 20,000 SAR and certificates of participation. <br> <br>
-					<div class="col-md-12 col-sm-12">
-						<div class="row">
-							<div class="col-sm-3">
-								<!-- Portfolio image #1 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up image -->
-										<a href="images/portfolio-images/MENAISC2017/echocity-f.jpg"
-											data-type="image" data-lightbox="image" class="hoverLink"
-											title="Full view of the model city"></a>
-										<!--/ Pop-up image -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/MENAISC2017/echocity-f_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-picture -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title"> Full view of the model city</h3>
-
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio image #1 -->
-							</div>
-							<div class="col-sm-3">
-								<!-- Portfolio image #2 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up image -->
-										<a href="images/portfolio-images/MENAISC2017/oil_pumps.jpg"
-											data-type="image" data-lightbox="image" class="hoverLink"
-											title="Oil Pumps of the MENA ISC 2017 echoCiTy-F model city"></a>
-										<!--/ Pop-up image -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/MENAISC2017/oil_pumps_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-picture -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">Oil Pumps of the MENA ISC 2017 echoCiTy-F model city</h3>
-
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio image #2 -->
-							</div>
-							<div class="col-sm-3">
-								<!-- Portfolio image #3 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up image -->
-										<a href="images/portfolio-images/MENAISC2017/custom_made_buildings.jpg"
-											data-type="image" data-lightbox="image" class="hoverLink"
-											title="The custom made model buildings of Riyadh"></a>
-										<!--/ Pop-up image -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/MENAISC2017/custom_made_buildings_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-picture -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">The custom made model buildings of Riyadh</h3>
-
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio image #3 -->
-							</div>
-							<div class="col-sm-3">
-								<!-- Portfolio image #4 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up image -->
-										<a href="images/portfolio-images/MENAISC2017/during_the_hackathon.jpg"
-											data-type="image" data-lightbox="image" class="hoverLink"
-											title="During the Hackathon"></a>
-										<!--/ Pop-up image -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/MENAISC2017/during_the_hackathon_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-picture -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">During the Hackathon</h3>
-
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio image #4 -->
-							</div>
-						</div>
-						<!--/ col-sm-3 -->
-						<div class="col-sm-3"></div>
-						<!--/ col-sm-3 -->
-					</div>
-					<!--/ row -->
-					
-					<div class="row">
-							<div class="col-sm-3">
-								<!-- Portfolio image #5 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up image -->
-										<a href="images/portfolio-images/MENAISC2017/fountain.jpg"
-											data-type="image" data-lightbox="image" class="hoverLink"
-											title="A closer look"></a>
-										<!--/ Pop-up image -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/MENAISC2017/fountain_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-picture -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">A closer look</h3>
-
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio image #5 -->
-							</div>
-							<div class="col-sm-3">
-								<!-- Portfolio image #6 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up image -->
-										<a href="images/portfolio-images/MENAISC2017/attempted_attack_on_a_board.jpg"
-											data-type="image" data-lightbox="image" class="hoverLink"
-											title="Attempted attack on the airport terminal display"></a>
-										<!--/ Pop-up image -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/MENAISC2017/attempted_attack_on_a_board_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-picture -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">Attempted attack on the airport terminal display</h3>
-
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio image #6 -->
-							</div>
-						</div>
-						<!--/ col-sm-3 -->
-						<div class="col-sm-3"></div>
-						<!--/ col-sm-4 -->
-					</div>
-					<!--/ row -->
-
-
-				</div>
-
-			</div>
-			<!--/ row -->
-
-			<!--/ container -->
-		</section>
-		<!--/ Portfolio category 3 columns section with custom top padding -->
-
-		<!-- Portfolio category 3 columns section with custom top padding -->
-		<section id="portfolio5" class="hg_section ptop-80">
-			<div class="container">
-				<div class="row">
-
-					<!-- Title element with bottom border -->
-					<div
-						class="kl-title-block clearfix text-center tbk-symbol--border tbk-icon-pos--after-title">
-						<h4 class="tbk__subtitle fs-18 light-gray">DU HACKATHON 2016</h4>
-					</div>
-					<!--/ Title element with bottom border -->
-
-					<strong>Echothrust Solutions</strong> created from scratch, a smart
-					city model, the <strong>echoCiTy-F</strong>, which represents vital
-					infrastructure components of a smart city - including ICS and SCADA
-					systems for transportation, energy, communications and
-					construction. The gameplay was visible to the players and public
-					through computer generated visualisations. Amongst other challenges,
-					hackers tried to obtain control of a model train, its rail tracks and
-					the train passage bars, the lights and ventilation of a train tunnel,
-					the airport's communication tower, a power plant and a nuclear plant,
-					wind turbines and more. <strong>echoCTF's</strong> gameplay was designed
-					to assess students knowledge and skills and educate them on cyber security
-					and ethical hacking. The team with the highest points at the end won
-					the competition, taking home the prize of AED 20,000 and certificates
-					of participation. <br> <br>
-					<div class="col-md-12 col-sm-12">
-						<div class="row">
-							<div class="col-sm-3">
-								<!-- Portfolio item #1 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up image -->
-										<a href="images/portfolio-images/portfolio2-fu.jpg"
-											data-type="image" data-lightbox="image" class="hoverLink"
-											title="Rocket Launcher protecting the Industrial section of the DU Hackathon 2016 echoCiTy-F model city."></a>
-										<!--/ Pop-up image -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/portfolio2-fu_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-picture -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">Rocket Launcher protecting the Industrial section of the DU Hackathon 2016 echoCiTy-F model city.</h3>
-										<!-- Description .pt-cat-desc -->
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio item #1 -->
-							</div>
-							<!--/ col-sm-4 -->
-
-							<div class="col-sm-3">
-								<!-- Portfolio item #2 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up image -->
-										<a href="images/portfolio-images/portfolio4-fu.jpg"
-											data-type="image" data-lightbox="image" class="hoverLink"
-											title="Night view of train station view of the DU Hackathon 2016 echoCiTy-F model city"></a>
-										<!--/ Pop-up image -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/portfolio4-fu_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-picture -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">Night view of train station view of the DU Hackathon 2016 echoCiTy-F model city</h3>
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio item #2 -->
-							</div>
-							<!--/ col-sm-3 -->
-
-							<div class="col-sm-3">
-								<!-- Portfolio item #3 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up image -->
-										<a href="images/portfolio-images/portfolio9-fu.jpg"
-											data-type="image" data-lightbox="image" class="hoverLink"
-											title="A closer view of the Model City"></a>
-										<!--/ Pop-up image -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/portfolio9-fu_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon = .glyphicon-picture -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">Closer view of the model city</h3>
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio item #3 -->
-							</div>
-
-							<!--/ col-sm-3 -->
-							<div class="col-sm-3">
-								<!-- Portfolio item #4 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up image -->
-										<a href="images/portfolio-images/portfolio10-6-fu.jpg"
-											data-type="image" data-lightbox="image" class="hoverLink"
-											title="The competition hall"></a>
-										<!--/ Pop-up image -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/portfolio10-6-fu_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-picture -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">The hall</h3>
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio item #4 -->
-							</div>
-							<!--/ col-sm-3 -->
-						<div class="col-sm-3"></div>
-						<!--/ col-sm-4 -->
-					</div>
-					<!--/ row -->
-					
-					<div class="row">
-							<div class="col-sm-3">
-								<!-- Portfolio item #5 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up video -->
-										<a href="images/portfolio-images/portfolio16-6-fu.jpg"
-											data-lightbox="image" class="hoverLink" title="Visual representation of network traffic"></a>
-										<!--/ Pop-up video -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/portfolio16-6-fu_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-play -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">Visual representation of network traffic</h3>
-
-
-										<!-- Description .pt-cat-desc -->
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio item #5 -->
-							</div>
-							<!--/ col-sm-4 -->
-
-							<div class="col-sm-3">
-								<!-- Portfolio item #6 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up image -->
-										<a href="images/portfolio-images/portfolio15-6-fu.jpg"
-											data-type="image" data-lightbox="image" class="hoverLink"
-											title="1st place winners of the competition"></a>
-										<!--/ Pop-up image -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/portfolio15-6-fu_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-picture -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">1st place winners</h3>
-
-
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio item #6 -->
-							</div>
-							<!--/ col-sm-3 -->
-
-
-							<div class="clear"></div>
-
-							<div class="col-sm-3"></div>
-							<!--/ col-sm-3 -->
-						</div>
-						<!--/ row -->
-
-					</div>
-					<!--/ col-md-12 col-sm-12 -->
-				</div>
-				<!--/ row -->
-			</div>
-			<!--/ container -->
-		</section>
-		<!--/ Portfolio category 3 columns section with custom top padding -->
-
-		<!-- Portfolio category 3 columns section with custom top padding -->
-		<section id="portfolio6" class="hg_section ptop-20">
-			<div class="container">
-				<div class="row">
-
-					<!-- Title element with bottom border -->
-					<div
-						class="kl-title-block clearfix text-center tbk-symbol--border tbk-icon-pos--after-title">
-
-						<h4 class="tbk__subtitle fs-18 light-gray">DU HACKATHON 2014</h4>
-					</div>
-					<!--/ Title element with bottom border -->
-
-					<div class="col-md-12 col-sm-12">
-						<div class="row">
-							<div class="col-sm-3">
-								<!-- Portfolio item #1 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up image -->
-										<a href="images/portfolio-images/portfolio14-1-fu.jpg"
-											data-type="image" data-lightbox="image" class="hoverLink"
-											title="DU Hackathon 2014 - Dubai"></a>
-										<!--/ Pop-up image -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/portfolio14-1-fu_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-picture -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">DU Hackathon 2014 - Dubai</h3>
-
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio item #1 -->
-							</div>
-							<!--/ col-sm-3 -->
-
-							<div class="col-sm-3">
-								<!-- Portfolio item #2 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up image -->
-										<a href="images/portfolio-images/portfolio14-2-fu.jpg"
-											data-type="image" data-lightbox="image" class="hoverLink"
-											title="DU Hackathon 2014 - Dubai"></a>
-										<!--/ Pop-up image -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/portfolio14-2-fu_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-picture -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">DU Hackathon 2014 - Dubai</h3>
-										<!-- Description .pt-cat-desc -->
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio item #2 -->
-							</div>
-							<!--/ col-sm-3 -->
-
-							<div class="col-sm-3">
-								<!-- Portfolio item #3 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up image -->
-										<a href="images/portfolio-images/portfolio14-3-fu.jpg"
-											data-type="image" data-lightbox="image" class="hoverLink"
-											title="DU Hackathon 2014 - Dubai"></a>
-										<!--/ Pop-up image -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/portfolio14-3-fu_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-picture -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">DU Hackathon 2014 - Dubai</h3>
-
-
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio item #3 -->
-							</div>
-							<!--/ col-sm-3 -->
-
-							<div class="col-sm-3">
-								<!-- Portfolio item #4 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up image -->
-										<a href="images/portfolio-images/portfolio14-4-fu.jpg"
-											data-type="image" data-lightbox="image" class="hoverLink"
-											title="DU Hackathon 2014 - Dubai"></a>
-										<!--/ Pop-up image -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/portfolio14-4-fu_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-picture -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">DU Hackathon 2014 - Dubai</h3>
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio item #4 -->
-							</div>
-							<!--/ col-sm-3 -->
-						<div class="col-sm-3"></div>
-						<!--/ col-sm-4 -->
-					</div>
-					<!--/ row -->
-						
-					<div class="row">
-							<div class="col-sm-3">
-								<!-- Portfolio item #5 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up video -->
-										<a href="images/portfolio-images/portfolio14-5-fu.jpg"
-											data-lightbox="image" class="hoverLink" title="DU Hackathon 2014 - Dubai"></a>
-										<!--/ Pop-up video -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/portfolio14-5-fu_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-play -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">DU Hackathon 2014 - Dubai</h3>
-
-
-										<!-- Description .pt-cat-desc -->
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio item #5 -->
-							</div>
-							<!--/ col-sm-3 -->
-
-							<div class="col-sm-3">
-								<!-- Portfolio item #6 -->
-								<div class="portfolio-item kl-has-overlay">
-									<!-- Intro image wrapper -->
-									<div class="img-intro">
-										<!-- Pop-up image -->
-										<a href="images/portfolio-images/portfolio14-6-fu.jpg"
-											data-type="image" data-lightbox="image" class="hoverLink"
-											title="DU Hackathon 2014 - Dubai"></a>
-										<!--/ Pop-up image -->
-
-										<!-- Image -->
-										<img src="images/portfolio-images/portfolio14-6-fu_th.jpg"
-											class="img-responsive" title="pic" alt="pic" />
-
-										<!-- Hover overlay -->
-										<div class="overlay">
-											<!-- Overlay wrapper -->
-											<div class="overlay-inner">
-												<!-- Icon =.glyphicon-picture -->
-												<span class="glyphicon glyphicon-picture"></span>
-											</div>
-											<!--/ Overlay wrapper -->
-										</div>
-										<!--/ Hover overlay -->
-									</div>
-									<!--/ Intro image wrapper -->
-
-									<!-- Portfolio entry -->
-									<div class="portfolio-entry">
-										<!-- Title with link -->
-										<h3 class="title">DU Hackathon 2014 - Dubai</h3>
-
-
-									</div>
-									<!--/ Portfolio entry -->
-								</div>
-								<!--/ Portfolio item #6 -->
-							</div>
-							<!--/ col-sm-4 -->
-
-
-						</div>
-						<!--/ col-sm-4 -->
-						<div class="col-sm-4"></div>
-						<!--/ col-sm-4 -->
-					</div>
-					<!--/ row -->
-
-
-				</div>
-
-			</div>
-			<!--/ row -->
-
-			<!--/ container -->
-		</section>
-		<!--/ Portfolio category 3 columns section with custom top padding -->
-
 		<section id="company" class="hg_section ptop-60 pbottom-60">
     		    <div class="container">
         		<div class="row">
@@ -4269,7 +2623,7 @@ qualification round and finals. The event gained national media attention.
 
 								<!-- Copyright text -->
 								<br />
-								<p style="text-align:right;">&copy; 2006-22 All rights reserved - Echothrust Solutions</p>
+								<p style="text-align:right;">&copy; 2006-25 All rights reserved - Echothrust Solutions</p>
 							</div>
 							<!-- Copyright -->
 						</div>
